@@ -1,0 +1,36 @@
+
+.imgBannerFondoPersonal{
+    width: 100%;  height: 50rem;  margin-top: 0px;
+    filter: brightness(0.7);
+    background-size: cover;
+    background-image: url("@/assets/banners/hero_fondo_personal_producto_cobb_capital_patrimonial.jpg");
+    background-position: 50% 50%;
+}
+.p_fondoPersonal{
+    color:map-get($map: $theme-colors, $key: primary );
+    text-align: center;
+    padding: 10px;
+}
+.p_li_fondoPersonal{
+    color:map-get($map: $theme-colors, $key: primary );
+    text-align: left;
+    padding: 0px 10px;
+}
+.imgFondoPersonal{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+.imgFondoPersonal_tab{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+.txtFondoPersonal{
+    text-align: center;
+    color:map-get($map: $theme-colors, $key:primary );
+    font-weight: 600;
+}
+

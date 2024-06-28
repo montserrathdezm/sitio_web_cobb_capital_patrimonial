@@ -1,0 +1,114 @@
+
+.hero_div_home{
+    display: flex;  width: auto; /*height: 75vh;*/
+  }
+  .h1__hero__home{
+    font-size: 100px;
+    background-color: transparent;  color:white;
+    text-align: center;  position: absolute;  
+    width: 100vw;  font-weight: 700;
+  }
+  .subt_hero_home{
+    text-align: center;  font-size: 25px;
+    background-color: transparent;  color:white;
+    position: absolute;  bottom: 10rem;  width: 100vw;
+  }
+  .subt_home_p{
+    font-weight:600;   margin-bottom:25px;
+    text-align: center;
+  }
+  .subt_home_p_2{
+    font-weight:600;   margin-bottom:0px;
+    text-align: center;
+  }
+  .btn_hero_home{
+    position: absolute;
+    background-color: map-get($map: $theme-colors, $key:primary );
+    text-align: center;  align-items: center;
+    bottom: 5rem;  width: 20rem;  height: 5rem;
+    color: map-get($map: $theme-colors, $key: light );
+    border: 0rem solid transparent;
+    font-size: 1.9rem;  border-radius: .4rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Bebas Neue Bold";
+  }
+  .home_quienes_somos{
+    margin: 0px; 
+  }
+  .margin_row{
+    margin:0px ;
+  }
+  .container_quienes_somos{
+    width: 100%;  padding: 30px 20px 30px 20px;
+  }
+  .p_quienesSomos{
+    font-size: 16px;  font-family: sans-serif;
+  }
+  strong {
+    font-family: sans-serif;  font-weight: 700;
+  }
+  .imgQuienesSomos{
+    width: 100%;  height: 600px;
+  }
+  .url_quienesSomos{
+    text-align: center;
+    padding-bottom: 50px; padding-top: 10px;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    color: map-get($map: $theme-colors, $key: primary);
+  }
+  
+  
+  .heroBlog{
+    height: 45rem;
+  }
+  .h1__hero__blog{
+    background-color: transparent;  color:white;
+    text-align: center;  position: absolute;  
+    width: 100vw;  font-weight: 700;
+    font-size: 100px;
+  }
+  
+  
+  .mapaUbicacion{
+    .mapa_Container.v-container {
+        max-width: 100%;
+    }
+  }
+  .mapContainer{
+    height: 50rem;
+    .mapa{
+        width: 100%;       height: 90%
+    }
+  }
+  .imgServicios{
+    width: 100%;
+  }
+  .tituloServicios{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    height: 65px;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+  }
+  .p_Servicios{
+    width: 100%;
+  }
+  .espaciado_btn_Servicios {
+    // padding: 1px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .botonServicios{
+    background-color: map-get($map: $theme-colors, $key:primary );
+    text-align: center; 
+    width: 20rem;  height: 5rem;
+    color: map-get($map: $theme-colors, $key: light );
+    border: 0rem solid transparent;
+    font-size: 1.9rem;  border-radius: .4rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Bebas Neue Bold";
+  }
+  

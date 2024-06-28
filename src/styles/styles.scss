@@ -1,0 +1,30 @@
+// Archivo que importa todos los demás archivos.
+
+
+// Colores
+$theme-colors: (
+  "primary":    #0170B9,
+  "primary__nav":#338CC7,
+  "secondary":  #a3f0ff,
+  "secondary50":  #F7BA2799,
+  "grey":   #555659,
+  "terciary":   #555659,
+  "success":    #555659,
+  "info":       #1A1919,
+  "light":      #FFFFFF,
+  "dark":       #1A1919,
+  "border":     #E5E4E4,
+  "text":       hsla(210, 2%, 21%, 1),
+  "textDark":       #000000,
+  "bg_cards":   #F0F0F0,
+  "inputBorders":#BDCCD1,
+  "itemsSelect": #81c2db,
+  "itemsSelect2":hsla(352, 76%, 39%, 0.1)
+  );
+
+@import "base.scss";
+@import "modules.scss";
+
+.pointer {
+  cursor: pointer;
+}

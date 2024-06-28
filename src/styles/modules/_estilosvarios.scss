@@ -1,0 +1,317 @@
+
+
+.centrado{
+    display: flex;
+    justify-content: center;
+  }
+  .v-container{
+    padding: 16px 0px;
+  }
+  .padding-servicios{
+    padding-bottom: 11rem;
+  }
+  .padding-servicios {
+    padding-bottom: 60px;
+  }
+  .popupformularios {
+    margin: auto;
+    position: fixed;
+    background-color: hsl(255, 5%, 5%, 0.7);
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: none;
+  
+    &.active {
+      display: flex;
+    }
+  }
+  .graciascontac {
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 7rem 2rem;
+    width: 85%;
+  
+    .h4g {
+      color: black;
+      padding-bottom: 2%
+    }
+  
+    .buttong {
+      width: 30%;
+      height: 30%;
+      padding-top: 2%;
+    }
+  
+    .mensajeAgradecimiento {
+      font-size: 1.7rem;
+    }
+  }
+  .popup {
+    width: 100%;
+  }
+  .exitosa {
+    border-radius: 8px;
+    width: 85%;
+    overflow: hidden;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3rem;
+  
+  
+    .imge {
+      padding-top: 2rem;
+      width: 14%;
+      height: 14%;
+    }
+  
+    .h4e {
+      color: rgb(0, 0, 0);
+      padding-top: 2%;
+      padding-bottom: 1%
+    }
+  
+    .buttone {
+      width: 30%;
+    }
+  
+    .mensajeGracias {
+      padding-left: 11%;
+      padding-right: 11%;
+      font-size: 1.6rem;
+    }
+  }
+  .noexitosa {
+    border-radius: 8px;
+    overflow: hidden;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3rem;
+    width: 85%;
+  
+    .imgne {
+      padding-top: 2rem;
+      width: 14%;
+      height: 14%;
+    }
+  
+    .h4ne {
+      color: rgb(0, 0, 0);
+      padding-top: 6%;
+      padding-bottom: 1%
+    }
+  
+    .buttonne {
+      width: 60%;
+      font-size: 20px;
+      height: 30%;
+    }
+  
+    .noe {
+      padding-bottom: 1%;
+      padding-left: 13%;
+      padding-right: 13%;
+      font-size: 1.6rem;
+  
+    }
+  }
+  .mdi-menu-down::before {
+    content: "\2335";
+    font-size: 15px;
+    opacity: 0.6;
+  }
+  .v-field__prepend-inner,
+  .v-field__append-inner,
+  .v-field__clearable {
+    display: flex;
+    align-items: inherit;
+    padding-top: 15px;
+  }
+  .inicioparrafo {
+    padding: 0 20px;
+  }
+  select {
+    font-size: 5px;
+  }
+  .v-card{
+    border-radius: 0px;
+  }
+  .cardContainer{
+    position: relative;
+    background-color: map-get($map: $theme-colors, $key: bg_cards );
+    box-shadow: 8px 6px 10px -10px;
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  .card{
+    border-radius: 50px 10px 50px 10px;
+    width:  20rem;
+    height: 32.5rem;
+    background-color: map-get($map: $theme-colors, $key: light);
+    padding: 2rem;
+    border-color: transparent;
+    display: flex;
+    align-items : center;
+    padding-top: 7rem;
+    text-align: center;
+    h4{
+      font-size: 3rem
+    }
+    p{
+      font-size: 1.6rem
+    }
+  }
+  .v-slide-group__prev{
+    flex: 0 1 0;
+    min-width: 0px;
+    i{
+      z-index: 1;
+      position: absolute;
+      margin-left: 5rem;
+    }
+  }
+  .v-slide-group__next{
+    flex: 0 1 0;
+    min-width: 0px;
+    i{
+      z-index: 1;
+      position: absolute;
+      margin-right: 5rem;
+    }
+  }
+  .v-slide-group__container div div:nth-child(1){
+    padding-left: 5rem;
+  }
+  .cardContainer .v-slide-group__content{
+    justify-content: left;
+    gap: 2rem;
+  }
+  .cardContainer .v-slide-group__content div:nth-child(1)  {
+    margin-left: 1vw;
+    margin-top: 5rem;
+  }
+  .cardContainer .v-slide-group__content div:nth-child(2) {
+    margin-top: 4.5rem;
+  }
+  .cardContainer i {
+    background-color: map-get($map: $theme-colors, $key: secondary50);
+    font-size: 4rem;
+    color: map-get($map: $theme-colors, $key: light);
+    border-radius: 50%;
+  }
+  .cardContainer .cardContainer__img{
+    position: absolute;
+  }
+  .cardContainer .cardContainer__img:nth-child(1){
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    width: 10rem;
+  }
+  .cardContainer .cardContainer__img:nth-child(2){
+    left: 2rem;
+    bottom: 2rem;
+    width: 5rem;
+  }
+  .cardContainer__titulo{
+    width: 100%;
+  }
+  .cardContainer__titulo img{
+    width: 25rem;
+    margin-top: -3rem 
+  }
+  input{
+    font-family: 'Outfit Medium';
+  }
+  .infoContactanos__main{
+    padding-top: 2rem;
+    h2 {
+      padding-bottom: 3rem;
+    }
+  }
+  .v-text-field input {
+    color: red;
+    opacity: 0;
+    padding-bottom: 30px;
+  }
+  .v-text-field input {
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    padding-bottom: 13px;
+    margin-top: -4px;
+  }
+  .v-field__input {
+    padding-top: calc(var(--v-field-padding-top, 10px) + var(--v-input-padding-top, 0));
+  }
+  .v-field__outline{
+    .v-field__outline__start{
+      display: none;
+    }
+    .v-field__outline__notch{
+      &::before, &::after{
+        display: none;
+      }
+      label{
+        padding: 2px 5px;
+        background-color: white;
+      }
+    }
+    .v-field__outline__end{
+      display: none;
+    }
+  }
+  .v-input{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding-bottom: 1.2rem;
+  }
+  .v-selection-control--inline {
+    align-items: flex-start;
+  }
+  .checkboxstyle{
+    padding-top: 0;
+    .v-selection-control--inline .v-label {
+      width: auto;
+      font-size: 13px;
+    }
+    i {
+      font-size: 24px;
+      &.mdi-checkbox-blank-outline{
+        color: map-get($map: $theme-colors, $key: text);
+      }
+      &.mdi-checkbox-marked{
+        color: map-get($map: $theme-colors, $key: primary);
+      }
+    }
+    .v-label.v-label--clickable{
+      font-size: 14px;
+      font-family: Outfit;
+    }
+  }
+  .v-list {
+    padding: 1.5rem;
+  }
+  .v-list-item--density-default.v-list-item--one-line {
+    border-radius: 10px;
+  }
+  .v-list-item--variant-text .v-list-item__overlay {
+    background: map-get($map: $theme-colors, $key: itemsSelect);
+  }
+  .v-list-item--density-default:not(.v-list-item--nav).v-list-item--one-line {
+    padding: 4px 5px
+  }
+  .v-list-item-title{
+    font-size: 16px;
+    padding-bottom: 5px;
+    font-family: 'Outfit';
+  }
+  .v-input__details {
+      color: map-get($map: $theme-colors, $key: primary);
+      font-weight: 700;
+      font-family: Outfit;
+      padding-left: 0px ;
+      margin-left: -5px;
+  }
+  

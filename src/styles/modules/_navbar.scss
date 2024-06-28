@@ -1,0 +1,379 @@
+// --------------------- NAV ---------------------
+nav{
+  position: relative ;
+  div {
+    display: none;
+    a.navbar-brand, a {
+      font-family: "Butler";
+      color: map-get($map: $theme-colors, $key: light );
+      margin: 0;
+      font-size: 2.0rem;
+    }
+
+    div:first-child{
+      display: flex;
+      align-items: center;
+    }
+  }
+  a img.logo{
+    padding: 3rem;
+    height: 6rem;
+  }
+  a:nth-child(1){
+    display: flex;
+    justify-content: center;
+  }
+  &.navbar{
+    display: flex;
+    position:fixed;
+    justify-content: center;
+  }
+}
+
+// ---------------------------------------------------  NAV MOVIL
+.menuMovil {
+  display: block;  position: absolute ;
+  top: 1.5rem;  right: 1.4rem;
+  z-index: 0;
+  padding-top: .8rem;
+  width: 42px;  height: 42px;
+  background-color: white ;
+    border-radius: 27px;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        overflow: hidden;
+        cursor: pointer;
+        span{
+          display: block;
+          width: 3rem;          height: .5rem;
+          background-color: map-get($map:$theme-colors, $key: primary );
+          transition: 0.1s;
+        }
+        &.active{
+          span:nth-child(1){
+            transform: translateY(1rem) rotate(45deg);
+          }
+          span:nth-child(2){
+            transform: translateX(3.5rem);
+          }
+          span:nth-child(3){
+            transform: translateY(-1rem) rotate(315deg);
+          }
+        }
+      }
+}
+
+.menuMovil__items{
+  display: block;  position: absolute;
+  top: 7rem;  right: 10;
+  width: 50rem;  height: 0px;
+  transition: height .5s ease-in-out;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: map-get($map: $theme-colors, $key: primary);
+  opacity: 1;
+  z-index: 12;
+  &.active{
+    height: auto;
+    transition: height .5s ease-in-out;
+  }
+}
+.menuMovil__items__menu{
+  display: flex;
+  z-index: 0;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+  opacity: 1;
+  img{
+    width: 6px;
+    height: 6px;
+  }
+}
+.menuMovil__items__rrss{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0.6rem 0 1rem 0;
+}
+
+
+// ----------------------------- NUEVOS ESTILOS -----------------------------
+.btnClientes{
+  border: solid 1.5px;
+  border-radius: 25px;
+}
+a.btnClientes:hover {
+  background-color: map-get($map: $theme-colors, $key: primary );
+}
+a:hover{
+  color: yellowgreen;
+}
+
+@media screen and (min-width: 320px) {
+  nav{
+    background-color: transparent;
+    width: 100%;    opacity: 95%;
+    box-shadow: .5rem .1rem 1rem transparent;
+  }
+  h1{
+    font-size: 2.3rem;
+    padding: .5rem 2rem;
+  }
+}
+
+@media screen and (min-width: 480px)  {
+  nav{
+    background-color: transparent;
+    width: 100%;
+    opacity: 95%;
+    font-family: "Bebas Neue Bold";
+    box-shadow: .5rem .1rem 1rem transparent;
+  }
+  h1{
+    font-size: 4.5rem;
+    padding: .5rem 2rem;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  nav{
+    background-color: transparent;
+    width: 100%;
+    opacity: 95%;
+    font-family: "Bebas Neue Bold";
+    box-shadow: .5rem .1rem 1rem transparent;
+  }
+  h1{
+      font-size: 4.5rem;
+      padding: .5rem 2rem;
+    }
+    footer{
+      font-size: 2.0rem;
+      a{
+        font-size: 2.0rem;
+        text-decoration: underline;
+      }
+    }
+}
+
+@media screen and (min-width: 1024px)  {
+  h1{
+    font-size: 7.7rem;
+    padding: .5rem 2rem;
+  }
+  nav {
+    &.navbar {
+      display: flex;
+      justify-content: space-between;
+      button.btn {
+        border: 0 solid transparent;
+        &:active, &:hover, &:focus {
+          color: map-get($map: $theme-colors, $key: secondary)
+        }
+      }
+    }
+    a:nth-child(1) {
+      display: block;
+    }
+    a img.logo {
+      padding: .0rem 0rem 0rem 0rem;
+      height: 6.5rem
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      a.navbar-brand, a {
+        font-size: 2.0rem;
+      }
+      div:first-child {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-right: 2rem;
+        .enlaceHeaderDesk {
+          padding: 0 1rem;
+          &:hover {
+            color: map-get($map: $theme-colors, $key: light);
+          }
+          &.active {
+            border-radius: 10px;
+            background-color: map-get($map: $theme-colors, $key: secondary);
+            color: map-get($map: $theme-colors, $key: dark);
+          }
+        }
+      }
+      div img {
+        width: .6rem;
+        height: .6rem;
+      }
+    }
+  }
+  nav{
+    background-color: map-get($map: $theme-colors, $key: primary );
+    width: 100%;
+    opacity: 95%;
+    font-family: "Bebas Neue Bold";
+    box-shadow: .5rem .1rem 1rem transparent;
+  }
+  .menuMovil{
+    display: none;
+  }
+  .menuMovil__items{
+    display: none;
+  }
+  .menuMovil__items.active{
+    display: none;
+  }
+  footer{
+    font-size: 2.2rem;
+    a{
+      font-size: 2.2rem;
+      text-decoration: underline;
+    }
+  }
+  
+}
+
+@media screen and (min-width: 1200px)  {
+  nav{
+    background-color: map-get($map: $theme-colors, $key: primary);
+    width: 100%;
+    opacity: 95%;
+    font-family: "Bebas Neue Bold";
+    box-shadow: .5rem .1rem 1rem black;
+  }
+  h1{
+    font-size: 7.7rem;
+    padding: .5rem 2rem;
+  }
+  
+  h2{
+    font-size: 6rem;
+  }
+  
+  h3{
+    font-size: 5.6rem;
+  }
+  h4{
+    font-size: 3.6rem;
+  }
+  
+  p, li{
+    font-size: 1.9rem;
+  }
+  p.bold{
+    font-family: "Outfit Medium";
+    font-weight: 500;
+    font-size: 2.4rem;
+  }
+  .home__firstText p {
+    font-size: 2.3rem;
+  }
+  footer{
+    font-size: 2.2rem;
+    a{
+      font-size: 2.2rem;
+      text-decoration: underline;
+    }
+  }
+  nav a img.logo {
+    padding: 0rem 0rem 0rem 2rem;
+    height: 7.5rem;
+  }
+}
+
+@media screen and (min-width: 1500px)  {
+  nav{
+    background-color: map-get($map: $theme-colors, $key: primary);
+    width: 100%;
+    opacity: 95%;
+    font-family: "Bebas Neue Bold";
+    box-shadow: .5rem .1rem 1rem black;
+  }
+  h1{
+    font-size: 7.7rem;
+    padding: .5rem 2rem;
+  }
+  
+  h2{
+    font-size: 6rem;
+  }
+  
+  h3{
+    font-size: 5.6rem;
+  }
+  h4{
+    font-size: 3.6rem;
+  }
+  
+  p, li{
+    font-size: 1.9rem;
+  }
+  p.bold{
+    font-family: "Outfit Medium";
+    font-weight: 500;
+    font-size: 2.4rem;
+  }
+  .home__firstText p {
+    font-size: 2.3rem;
+  }
+  footer{
+    font-size: 2.2rem;
+    a{
+      font-size: 2.2rem;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  nav{
+    background-color: map-get($map: $theme-colors, $key: primary);
+    width: 100%;
+    opacity: 95%;
+    font-family: "Bebas Neue Bold";
+    box-shadow: .5rem .1rem 1rem black;
+  }
+  h1{
+    font-size: 7.7rem;
+    padding: .5rem 2rem;
+  }
+  
+  h2{
+    font-size: 6rem;
+  }
+  
+  h3{
+    font-size: 5.6rem;
+  }
+  h4{
+    font-size: 3.6rem;
+  }
+  
+  p, li{
+    font-size: 1.9rem;
+  }
+  p.bold{
+    font-family: "Outfit Medium";
+    font-weight: 500;
+    font-size: 2.4rem;
+  }
+  .home__firstText p {
+    font-size: 2.3rem;
+  }
+  footer{
+    font-size: 2.8rem;
+    a{
+      font-size: 2.8rem;
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
+
